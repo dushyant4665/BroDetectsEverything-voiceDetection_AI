@@ -1,11 +1,13 @@
+import React from 'react'
 
-
-export default function Home() {
-  return (
+const index = () => {
+  return (|
+    <div className='bg-gray-800 '>
     <div>
-     <h1>
-      hello dushyant
-     </h1>
+      <h1 className='font-bold text-white'>Push dushyant</h1>  
     </div>
-  );
+    </div>
+  )
 }
+
+export default index
