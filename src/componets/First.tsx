@@ -4,12 +4,16 @@ const First = () => {
   return (
     <div className='bg-black'>
 
-        <div>
-            
-        </div>
+       <div>
+
+    <p>heloo</p>
+  </div>
       
     </div>
   )
 }
 
 export default First
+
+
+
