@@ -1,9 +1,9 @@
 'use client';
 import React,{useState}from 'react';
 
-interface SpeechRecognitionEvent extends Event {
-    results: SpeechRecognitionResultList;
-  }
+// interface SpeechRecognitionEvent extends Event {
+//     results: SpeechRecognitionResultList;
+//   }
 
 const Manual=()=>{
   const[text, setText]=useState('');   
