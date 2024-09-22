@@ -1,12 +1,12 @@
 
 import Image from "next/image";
-import First from "@/components/First";
+import Manual from '../components/Manual'
 
 export default function Home() {
   return (
     <div>
-      
-<First/>
+      <Manual/>
+
     </div>
   );
 }
