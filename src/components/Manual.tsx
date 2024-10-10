@@ -17,7 +17,7 @@ const[language,setLanguage] = useState('en-US');
   const startListening=()=>{
     if('webkitSpeechRecognition'in window){
       recognize =new(window as any).webkitSpeechRecognition();
-      recognize.lang =language  
+      recognize.lang=language  
 
       recognize.onstart=()=>{
         setisHearing(true)
