@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e2f;
+    color: #f5f5f5;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  
+  .voice-input {
+    position: relative;
+  }
+  
+  #mic-button {
+    background-color: #3a3a6d;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .mic-icon::before {
+    content: "🎤"; /* Simple microphone icon */
+    font-size: 2rem;
+  }
+  
+  .listening-text {
+    margin-top: 10px;
+    color: #b3b3cc;
+    font-size: 1rem;
+  }
+  
+  .output {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #transcript, #voice-type {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(58, 58, 109, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(58, 58, 109, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(58, 58, 109, 0); }
+  }
+  

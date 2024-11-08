@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Detection App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Voice Detection App</h1>
+
+    <div class="voice-input">
+      <button id="mic-button" onclick="startListening()">
+        <i class="mic-icon"></i>
+      </button>
+      <p class="listening-text" id="listening-status">Click to Start Listening</p>
+    </div>
+
+
+    <div class="output">
+      <p id="transcript">Transcription: <span id="transcript-text"></span></p>
+      <p id="voice-type">Detected Voice: <span id="voice-type-text">--</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
