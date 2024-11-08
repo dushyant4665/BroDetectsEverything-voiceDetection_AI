@@ -1,3 +1,6 @@
+//detectVoiceType ek example function h 
+
+
 
 function detectVoiceType(transcript) {
   
@@ -7,27 +10,27 @@ function detectVoiceType(transcript) {
   }
   
 
-  function startListening() {
-    const listeningStatus = document.getElementById("listening-status");
-    const transcriptText = document.getElementById("transcript-text");
-    const voiceTypeText = document.getElementById("voice-type-text");
+  function startListening(){
+    const listeningStatus=document.getElementById("listening-status");
+    const transcriptText=document.getElementById("transcript-text");
+    const voiceTypeText=document.getElementById("voice-type-text");
   
-    listeningStatus.textContent = "Listening...";
+    listeningStatus.textContent="Listening...";
   
     const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     recognition.lang = 'en-US';
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
   
-    recognition.onstart = () => {
+    recognition.onstart=()=>{
  
       document.getElementById("mic-button").classList.add("active");
     };
   
-    recognition.onresult = (event) => {
-      const transcript = event.results[0][0].transcript;
-      transcriptText.textContent = transcript;
-      voiceTypeText.textContent = detectVoiceType(transcript);
+    recognition.onresult=(event)=>{
+      const transcript=event.results[0][0].transcript;
+      transcriptText.textContent=transcript;
+      voiceTypeText.textContent =detectVoiceType(transcript);
     };
   
     recognition.onerror = (event) => {
