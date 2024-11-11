@@ -38,8 +38,8 @@ function detectVoiceType(transcript) {
       console.error("Speech recognition error", event.error);
     };
   
-    recognition.onend = () => {
-      listeningStatus.textContent = "Click to Start Listening";
+    recognition.onend=()=>{
+      listeningStatus.textContent="Click to Start Listening";
       document.getElementById("mic-button").classList.remove("active");
     };
   
