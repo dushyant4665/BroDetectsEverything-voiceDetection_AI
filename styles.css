@@ -38,7 +38,7 @@
   }
   
   .mic-icon::before {
-    content: "🎤"; /* Simple microphone icon */
+    content: "🎤";
     font-size: 2rem;
   }
   
