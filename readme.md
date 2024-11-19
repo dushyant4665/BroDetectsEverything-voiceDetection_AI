@@ -36,6 +36,7 @@ cd BroDetectsEverything-voiceDetection_AI
 
 
 
-This project is a work in progress. The AI/ML-based voice detection feature is under development and will be integrated soon.
+This project is a work in progress. The AI/ML-based voice detection feature is under development and will be integrated....
 
-I'm working on it 
+I'm working on it
+ 
