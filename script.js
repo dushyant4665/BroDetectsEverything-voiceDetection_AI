@@ -2,9 +2,9 @@
 // abhi ispe kaam krra huu
 
 
-function detectVoiceType(transcript) {
+function detectVoiceType(transcript){
   
-    if (transcript.includes("Hello")) return "Human - Adult Male";
+    if(transcript.includes("Hello"))return"Human - Adult Male";
     if (transcript.includes("woof")) return "Animal - Dog";
     return "Unknown";
   }
@@ -33,8 +33,8 @@ function detectVoiceType(transcript) {
       voiceTypeText.textContent =detectVoiceType(transcript);
     };
   
-    recognition.onerror = (event) => {
-      listeningStatus.textContent = "Error: Please try again.";
+    recognition.onerror=(event)=>{
+      listeningStatus.textContent="Error:Try Again.";
       console.error("Speech recognition error", event.error);
     };
   
