@@ -1,10 +1,12 @@
 
 ## Overview (In progress)
 
-This project is an ongoing effort to build a Voice Detection App that listens to audio input, transcribes it into text, and identifies the type of voice (for example: male, female, child, or animal etc etc)....
+Working on (A Voice Detection App). This app listens to sounds, turns them into text, and figures out what kind of voice it is—like if it’s a man, woman, child, or even an animal!
 
-The app's initial version uses basic technologies like HTML, CSS, JavaScript, and the Web Speech API for speech-to-text conversion. However, we are now integrating Machine Learning tools and libraries to enhance its ability to accurately classify voices.
+Built a simple version using HTML, CSS, JavaScript, and something called the Web Speech API to help with turning speech into text. But now, adding some cool Machine Learning tools to make the app even better at recognizing and classifying different voices.
 
+That's detect what kind of voice it is 
+like Human, animal, or etc etc...
 
 ### Features(planned)
 1. Real-time voice detection: Detect whether the speaker is a human, child, male, female, or an animal.
