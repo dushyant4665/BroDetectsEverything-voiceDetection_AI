@@ -4,9 +4,9 @@
 
 function detectVoiceType(transcript){
   
-    if(transcript.includes("Hello"))return"Human - Adult Male";
-    if (transcript.includes("woof")) return "Animal - Dog";
-    return "Unknown";
+    if(transcript.includes("Hello"))return"Human- Adult Male";
+    if (transcript.includes("woof")) return "Animal- Dog";
+    return"Unknown";
   }
   
 
@@ -17,10 +17,10 @@ function detectVoiceType(transcript){
   
     listeningStatus.textContent="Listening...";
   
-    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-    recognition.lang = 'en-US';
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
+    const recognition=new(window.SpeechRecognition || window.webkitSpeechRecognition)();
+    recognition.lang='en-US';
+    recognition.interimResults=false;
+    recognition.maxAlternatives=1;
   
     recognition.onstart=()=>{
  
@@ -30,7 +30,7 @@ function detectVoiceType(transcript){
     recognition.onresult=(event)=>{
       const transcript=event.results[0][0].transcript;
       transcriptText.textContent=transcript;
-      voiceTypeText.textContent =detectVoiceType(transcript);
+      voiceTypeText.textContent=detectVoiceType(transcript);
     };
   
     recognition.onerror=(event)=>{
