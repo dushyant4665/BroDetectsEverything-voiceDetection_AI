@@ -6,6 +6,7 @@ function detectVoiceType(transcript){
   
     if(transcript.includes("Hello"))return"Human- Adult Male";
     if (transcript.includes("woof")) return "Animal- Dog";
+      if (transcript.includes("meow")) return "Animal- cat";
     return"Unknown";
   }
   
